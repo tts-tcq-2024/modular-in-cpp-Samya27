@@ -10,6 +10,16 @@ namespace TelCoColorCoder
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
+
+    const char* MajorColorNames[] = {
+        "White", "Red", "Black", "Yellow", "Violet"
+    };
+    int numberOfMajorColors =
+        sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
+    const char* MinorColorNames[] = {
+        "Blue", "Orange", "Green", "Brown", "Slate"
+    };
+
     ColorPair::ColorPair(MajorColor major, MinorColor minor)
         : majorColor(major), minorColor(minor)
     {}
@@ -20,7 +30,7 @@ namespace TelCoColorCoder
     MajorColor getMajor() {
                 return majorColor;
             }
-  ColorPair GetColorFromPairNumber(int pairNumber) {
+    ColorPair GetColorFromPairNumber(int pairNumber) {
         int zeroBasedPairNumber = pairNumber - 1;
         MajorColor majorColor = 
             (MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
