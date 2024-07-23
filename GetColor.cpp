@@ -15,4 +15,18 @@ namespace TelCoColorCoder
     int GetPairNumberFromColor(MajorColor major, MinorColor minor) {
         return major * numberOfMinorColors + minor + 1;
     }
+
+    std::string ToString() {
+                std::string colorPairStr = MajorColorNames[majorColor];
+                colorPairStr += " ";
+                colorPairStr += MinorColorNames[minorColor];
+                return colorPairStr;
+            }
+
+    MinorColor getMinor() {
+                return minorColor;
+            }
+    MajorColor getMajor() {
+                return majorColor;
+            }
 }
