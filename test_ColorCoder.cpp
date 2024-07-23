@@ -1,3 +1,5 @@
+#include <iostream>
+#include <assert.h>
 #include "test.hpp"
 #include "GetColor.hpp"
 
