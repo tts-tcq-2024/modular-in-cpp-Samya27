@@ -22,6 +22,9 @@ namespace TelCoColorCoder
                 colorPairStr += MinorColorNames[minorColor];
                 return colorPairStr;
             }
+    ColorPair::ColorPair(MajorColor major, MinorColor minor)
+        : majorColor(major), minorColor(minor)
+    {}
 
     MinorColor getMinor() {
                 return minorColor;
