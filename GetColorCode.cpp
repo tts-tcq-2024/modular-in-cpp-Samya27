@@ -17,15 +17,15 @@ namespace TelCoColorCoder
     ColorPair::ColorPair(MajorColor major, MinorColor minor):
         majorColor(major), minorColor(minor)
         {}
-    MinorColor getMinor() 
+    MinorColor ColorPair::getMinor() 
     {
         return minorColor;
     }
-    MajorColor getMajor() 
+    MajorColor ColorPair::getMajor() 
     {
         return majorColor;
     }
-    std::string ToString() 
+    std::string ColorPair::ToString() 
     {
         std::string colorPairStr = MajorColorNames[majorColor];
         colorPairStr += " ";
