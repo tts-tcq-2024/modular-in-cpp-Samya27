@@ -14,7 +14,7 @@ namespace TelCoColorCoder
         sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
     int numberOfMajorColors =
         sizeof(MajorColorNames) / sizeof(MajorColorNames[0]);
-    ColorPair(MajorColor major, MinorColor minor):
+    ColorPair::ColorPair(MajorColor major, MinorColor minor):
         majorColor(major), minorColor(minor)
         {}
     MinorColor getMinor() 
