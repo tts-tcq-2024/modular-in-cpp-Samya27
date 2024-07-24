@@ -1,6 +1,5 @@
 #include <iostream>
 #include <assert.h>
-#include "GetColorCode.hpp"
 #include "GetColorCode_Test.hpp"
 
 int main() {
